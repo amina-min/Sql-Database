@@ -1,0 +1,48 @@
+
+Answer The Question Number 01  
+#-------Create a Table-------#
+
+
+CREATE TABLE  emp1260295(
+eid int not null, 
+ename varchar2(20), 
+salary int, 
+hire_date date, 
+address varchar2(40),
+primary key (eid)
+);
+
+
+Answer The Question Number 02
+#--------Alter Table-------#
+
+ALTER TABLE emp1260295
+ADD department_id int;
+
+ALTER TABLE emp1260295
+ADD department_name varchar2(50);
+
+
+
+
+
+
+Answer The Question Number 03
+#------Find out The ename------#
+
+SELECT ename 
+FROM  emp1260295
+WHERE  ename LIKE 'B%';
+
+
+
+
+
+
+Answer The Question Number 04
+#------maximum salary-------#
+
+SELECT count(department_id),AVG(salary)
+from emp1260295
+GROUP BY department_id
+HAVING max(salary)>12000;

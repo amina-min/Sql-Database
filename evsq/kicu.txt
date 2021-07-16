@@ -1,0 +1,72 @@
+
+column add
+--------------------
+	alter table emp add(
+   	 phone number(14),
+   	 job_title varchar2(30)
+	);
+
+
+delete row:
+------------------DELETE  
+	FROM Customers
+	 WHERE CustomerName='Alfreds Futterkiste';
+
+	or	
+	---DELETE FROM table_name;
+
+update:
+----------------
+	UPDATE table_name
+	SET column1 = value1, column2 = value2, ...
+	WHERE condition;	
+
+view create:
+--------------------
+	CREATE VIEW view_name 
+	AS
+	SELECT column1, column2, ...
+	FROM table_name
+	WHERE condition;
+
+create sequence:
+------------------------------
+	CREATE SEQUENCE seq_person
+	MINVALUE 1
+	START WITH 1
+	INCREMENT BY 1
+	nocycle
+	nocase;
+
+primary key:
+---------------------
+	ALTER TABLE Persons
+	ADD PRIMARY KEY (ID);
+
+index:
+--------------
+	CREATE INDEX index_name
+	ON table_name (column1, column2, ...);
+
+
+DROP TABLE table_name;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
